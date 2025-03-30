@@ -17,6 +17,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-content: start;
 
   /* BACKGROUND */
 
@@ -61,11 +62,9 @@
   color: blue;
 }
 
-.header__content {
+.header__title {
   display: flex;
   flex-direction: column;
-}
-.header__title {
   margin: 183px 0 0 80px;
 
   /* FONT */
@@ -80,7 +79,7 @@
   margin-right: 651px;
 }
 
-.header__title_span-accent {
+.header__title-span {
   display: block;
 
   /* FONT */
@@ -119,26 +118,20 @@
 
 .header__footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
   margin: auto 80px 40px;
-  position: relative;
 }
 
 .header__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-
-  /* FONT */
-
-  font-style: normal;
-  font-weight: 500;
-  color: #838383;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__paragraph {
-  margin: auto 0 0 auto;
-  padding: 0;
+  display: flex;
+  margin: 0;
 
   /* FONT */
 
@@ -205,13 +198,13 @@
   row-gap: 24px;
 }
 
-.recipes__video-iframe {
+.recipes__iframe {
   width: 480px;
   height: 273px;
   border: 0;
 }
 
-.recipes__video-iframe:hover {
+.recipes__iframe:hover {
   box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.15);
 }
 
@@ -231,6 +224,6 @@
   margin-left: auto;
 }
 
-/* RESERVATIONS SECTION */
+/* RESERVATION SECTION */
 
 /* FOOTER */
