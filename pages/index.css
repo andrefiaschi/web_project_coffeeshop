@@ -228,8 +228,6 @@
 
 .reservation {
   padding: 100px 0 120px;
-  display: flex;
-  flex-direction: column;
 
   /* BACKGROUND */
 
@@ -243,7 +241,8 @@
 }
 
 .reservation__title {
-  margin: 0 auto 0;
+  margin-bottom: 80px;
+  text-align: center;
 
   /* FONT */
 
@@ -253,17 +252,22 @@
   line-height: 52px;
 }
 
-.form__fieldset {
-  display: flex;
-  flex-direction: column;
+.reservation__form {
+  margin: 0 auto;
+}
+
+.form {
   max-width: 385px;
-  margin: 80px auto 0;
+  padding: 0;
+}
+
+.form__fieldset {
   border: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .form__label {
-  display: flex;
-
   /* FONT */
 
   font-style: normal;
@@ -273,7 +277,6 @@
 }
 
 .form__input {
-  display: flex;
   margin: 8px 0 32px;
   height: 60px;
   border-radius: 4px;
@@ -296,6 +299,7 @@
 
 .form__button {
   height: 60px;
+  width: 100%;
   border: 0;
   border-radius: 4px;
   background-color: #2f80ed;
@@ -316,8 +320,8 @@
 }
 
 .form__label-checkbox {
-  align-self: center;
-  margin-top: 32px;
+  display: flex;
+  margin: 32px;
   column-gap: 12px;
 }
 
