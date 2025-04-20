@@ -107,7 +107,61 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar uma mesa</h2>
+
+          <form class="reservation__form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="form__name">Nome *</label>
+              <input
+                class="form__input"
+                id="form__name"
+                type="text"
+                name="name"
+                placeholder="Nome"
+                required
+              />
+              <label class="form__label" for="form__guests"
+                >Número de convidados *</label
+              >
+              <input
+                class="form__input"
+                id="form__guests"
+                type="number"
+                name="guests"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+              <label class="form__label" for="form__date">Data e hora *</label>
+              <input
+                class="form__input"
+                id="form__date"
+                type="datetime-local"
+                name="datetime"
+                required
+              />
+              <label class="form__label" for="form__email">Seu e-mail *</label>
+              <input
+                class="form__input"
+                id="form__email"
+                type="email"
+                name="email"
+                placeholder="email@email.com"
+                required
+              />
+
+              <button class="form__button">Reservar uma mesa</button>
+
+              <label class="form__label form__label-checkbox">
+                <input class="form__checkbox" type="checkbox" required />
+                Eu concordo com os termos de uso</label
+              >
+            </fieldset>
+          </form>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
