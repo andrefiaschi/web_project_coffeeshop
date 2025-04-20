@@ -227,6 +227,7 @@
 /* RESERVATION SECTION */
 
 .reservation {
+  margin: 0;
   padding: 100px 0 120px;
 
   /* BACKGROUND */
@@ -241,8 +242,8 @@
 }
 
 .reservation__title {
-  margin-bottom: 80px;
   text-align: center;
+  margin: 0 0 80px;
 
   /* FONT */
 
@@ -253,7 +254,7 @@
 }
 
 .reservation__form {
-  margin: 0 auto;
+  margin: 0 auto 0;
 }
 
 .form {
